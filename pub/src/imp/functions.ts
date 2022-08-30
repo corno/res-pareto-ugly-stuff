@@ -1,4 +1,5 @@
 import * as pt from "pareto-core-types"
+import * as pl from "pareto-core-lib"
 import * as api from "api-pareto-ugly-stuff"
 
 export const arrayLength: api.ArrayLength = (array) => {
@@ -46,4 +47,14 @@ export const stringLength: api.StringLength = (str) => {
 
 export const substr: api.SubStr = (str, begin, length) => {
     return str.substr(begin, length)
+}
+
+export const max: api.Max = (a, b) => {
+    const numbers = pl.flatten(b)
+
+    let currentMax = a
+    numbers.forEach(($) => {
+       currentMax = Math.max(currentMax, $)
+    })
+    return currentMax
 }

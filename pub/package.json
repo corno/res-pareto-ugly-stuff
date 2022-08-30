@@ -1,7 +1,8 @@
 {
   "author": "Corno",
   "dependencies": {
-    "api-pareto-ugly-stuff": "^0.1.0"
+    "api-pareto-ugly-stuff": "^0.2.1",
+    "pareto-core-internals": "^0.1.0"
   },
   "files": [
     "dist",
