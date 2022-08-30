@@ -1,5 +1,5 @@
 import * as pt from "pareto-core-types"
-import * as pl from "pareto-core-lib"
+import * as pl from "pareto-core-internals"
 import * as api from "api-pareto-ugly-stuff"
 
 export const arrayLength: api.ArrayLength = (array) => {
