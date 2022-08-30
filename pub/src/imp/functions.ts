@@ -58,3 +58,49 @@ export const max: api.Max = (a, b) => {
     })
     return currentMax
 }
+
+
+export const doUntil: api.DoUntil = (
+    stack,
+    test,
+    //callback: () => void,
+
+) => {
+
+    while (true) {
+        let stop = false
+        stack.pop(
+            ($) => {
+                stack.push($)
+
+                const goOn = test($)
+                if (!goOn) {
+                    //callback()
+                    stop = true
+                }
+            },
+            () => {
+                stop = true
+            }
+        )
+        if (stop) {
+            return
+        }
+    }
+}
+
+export const lookAhead: api.LookAhead = (
+    stack,
+    exists,
+    notExists,
+) => {
+    stack.pop(
+        ($) => {
+            stack.push($)
+            exists($)
+        },
+        () => {
+            notExists()
+        }
+    )
+}
