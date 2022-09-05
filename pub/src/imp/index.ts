@@ -1,2 +1,12 @@
 
-export * from "./public/functions"
+export * from "./public/JSONParse"
+export * from "./public/JSONStringify"
+export * from "./public/arrayLength"
+export * from "./public/doUntil"
+export * from "./public/getElement"
+export * from "./public/includes"
+export * from "./public/lookAhead"
+export * from "./public/startsWith"
+export * from "./public/stringLength"
+export * from "./public/substr"
+export * from "./public/trimEnd"

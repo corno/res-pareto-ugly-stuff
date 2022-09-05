@@ -1,7 +1,7 @@
 {
   "author": "Corno",
   "dependencies": {
-    "api-pareto-ugly-stuff": "^0.6.0",
+    "api-pareto-ugly-stuff": "^0.7.0",
     "pareto-core-internals": "^0.2.0"
   },
   "files": [
@@ -23,5 +23,5 @@
   },
   "types": "dist/index.d.ts",
   "version": "0.6.0",
-  "content-fingerprint": "7cdd3e7a0cec4aeda53b07aac08c1f677cb04f41"
+  "content-fingerprint": "d3f04e8d84b833e0e742eca5306a9d6cdaabd131"
 }
