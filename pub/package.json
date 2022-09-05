@@ -22,6 +22,6 @@
     "url": "git+https://github.com/corno/res-pareto-ugly-stuff.git"
   },
   "types": "dist/index.d.ts",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "content-fingerprint": "d3f04e8d84b833e0e742eca5306a9d6cdaabd131"
 }
