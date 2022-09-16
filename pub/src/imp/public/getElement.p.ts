@@ -1,8 +1,8 @@
 import * as pt from "pareto-core-types"
 
 import * as api from "api-pareto-ugly-stuff"
-import { increment } from "../private/f_increment"
-import { panic } from "../private/p_panic"
+import { increment } from "../private/increment.p"
+import { panic } from "../private/panic.p"
 
 export const f_getElement: api.FGetElement = <T>(
     //I don't want to have to specify this
