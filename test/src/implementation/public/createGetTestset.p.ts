@@ -8,7 +8,7 @@ import * as test from "lib-pareto-test"
 import * as api from "../../interface"
 
 
-import * as pub from "../../../../pub/dist"
+import * as pub from "../../../../pub"
 
 export const f_createGetTestset: api.FCreateGetTestset = ($d) => {
     return () => {

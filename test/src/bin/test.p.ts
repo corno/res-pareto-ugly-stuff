@@ -7,8 +7,8 @@
 // import * as diff from "res-pareto-diff"
 // import * as fs from "res-pareto-filesystem"
 
-// import { createGetTestset } from "../imp"
-// import { dependencies } from "../dependencies/dependencies"
+// import { createGetTestset } from "../implementation"
+// import { dependencies } from "../dependencies/dependencies.p"
 
 
 // pe.runProgram(
