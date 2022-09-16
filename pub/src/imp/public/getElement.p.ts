@@ -1,10 +1,10 @@
 import * as pt from "pareto-core-types"
 
 import * as api from "api-pareto-ugly-stuff"
-import { increment } from "../private/increment"
-import { panic } from "../private/panic"
+import { increment } from "../private/f_increment"
+import { panic } from "../private/p_panic"
 
-export const getElement: api.FGetElement = <T>(
+export const f_getElement: api.FGetElement = <T>(
     //I don't want to have to specify this
     $: {
         readonly "array": pt.Array<T>;
@@ -22,6 +22,7 @@ export const getElement: api.FGetElement = <T>(
     })
     if (res === undefined) {
         panic("PANIC: position does not exist")
+    } else {
+        return res
     }
-    return res
 }

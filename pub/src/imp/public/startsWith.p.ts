@@ -1,5 +1,5 @@
 import * as api from "api-pareto-ugly-stuff"
 
-export const startsWith: api.FStartsWith = ($) => {
+export const f_startsWith: api.FStartsWith = ($) => {
     return $.contextString.startsWith($.searchString)
 }
