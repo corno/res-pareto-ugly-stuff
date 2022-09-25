@@ -1,5 +1,5 @@
 
-export * from "./public/JSONParse.p"
+export * from "./public/JSONParseStream.p"
 export * from "./public/JSONStringify.p"
 export * from "./public/arrayLength.p"
 export * from "./public/getElement.p"
