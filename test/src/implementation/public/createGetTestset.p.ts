@@ -24,6 +24,24 @@ export const createGetTestset: api.FCreateGetTestset = ($d) => {
             })
         }
 
+        let res: null | string = null
+
+        const jsonParser = pub.createJSONParser<string>(
+            (t) => {
+                res = t
+            }
+        )
+
+        jsonParser(["data", '"foo"'])
+        jsonParser(["end", null])
+
+        builder.add("JSON Parser", {
+            type: ["test", {
+                type: ["boolean", { test: res === "foo" }]
+            }]
+        })
+
+
         return pl.asyncValue({
             elements: builder.getDictionary()
         })
