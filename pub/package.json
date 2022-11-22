@@ -2,8 +2,8 @@
   "author": "Corno",
   "dependencies": {
     "api-pareto-ugly-stuff": "^0.12.0",
-    "pareto-core-internals": "^0.8.0",
-    "pareto-core-lib": "^0.13.0"
+    "pareto-core": "^0.0.4",
+    "pareto-core-internals": "^0.9.0"
   },
   "files": [
     "dist",
@@ -24,5 +24,5 @@
   },
   "types": "dist/index.d.ts",
   "version": "0.9.0",
-  "content-fingerprint": "ba1dd9f6130796abcbb71c249f8facfa2cffd278"
+  "content-fingerprint": "7e991d34ebffe2bc49ab06101786666306d99d15"
 }
