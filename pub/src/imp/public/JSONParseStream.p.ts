@@ -1,7 +1,14 @@
-import * as pl from "pareto-core-lib"
+import * as pi from "pareto-core-internals"
 
-import * as api from "api-pareto-ugly-stuff"
+import * as api from "../../interface"
 
+
+function au<RT>(_x: never): RT {
+    throw new Error("unreachable")
+}
+function cc<T, RT>(input: T, callback: (output: T) => RT): RT {
+    return callback(input)
+}
 
 export const createJSONParser: api.FCreateJSONParser = (
     $i,
@@ -10,23 +17,23 @@ export const createJSONParser: api.FCreateJSONParser = (
     return ($) => {
         switch ($[0]) {
             case "data":
-                pl.cc($[1], ($) => {
+                cc($[1], ($) => {
                     if (temp === null) {
-                        pl.panic("unexpected data after end")
+                        pi.panic("unexpected data after end")
                     }
                     temp += $
                 })
                 break
             case "end":
-                pl.cc($[1], ($) => {
+                cc($[1], ($) => {
                     if (temp === null) {
-                        pl.panic("unexpected end twice")
+                        pi.panic("unexpected end twice")
                     }
                     try {
                         $i.callback(JSON.parse(temp))
                     } catch (error) {
                         if (!(error instanceof Error)) {
-                            pl.panic("unexpected error type")
+                            pi.panic("unexpected error type")
                         }
 
                         $i.onError(error.message)
@@ -35,7 +42,7 @@ export const createJSONParser: api.FCreateJSONParser = (
 
                 })
                 break
-            default: pl.au($[0])
+            default: au($[0])
         }
     }
 }

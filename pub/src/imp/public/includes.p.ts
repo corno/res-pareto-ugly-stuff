@@ -1,4 +1,4 @@
-import * as api from "api-pareto-ugly-stuff"
+import * as api from "../../interface"
 
 export const f_includes: api.FIncludes = ($) => {
     const searchString = $.value

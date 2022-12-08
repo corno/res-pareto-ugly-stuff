@@ -1,4 +1,4 @@
-import * as api from "api-pareto-ugly-stuff"
+import * as api from "../../interface"
 
 // export const p_lookAhead: api.XLookAhead = (
 //     stack,

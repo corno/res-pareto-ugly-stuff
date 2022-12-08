@@ -1,6 +1,6 @@
 import * as pt from "pareto-core-types"
 
-import * as api from "api-pareto-ugly-stuff"
+import * as api from "../../interface"
 import { increment } from "../private/increment.p"
 import { panic } from "../private/panic.p"
 
