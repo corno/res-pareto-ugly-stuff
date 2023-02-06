@@ -13,13 +13,9 @@ export const $: mproject.TProject = {
 
     'pubdependencies': d({
     }),
-    'type': ['library', {
-        'main': {
-            'definition': api,
-        },
-        'submodules': d({
-        }),
-        'executables': d({}),
+    'type': ['resource', {
+        'definition': api,
+        'devDependencies': d({}),
         'test': {
             'dependencies': d({
             }),

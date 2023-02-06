@@ -4,9 +4,7 @@
   "description": "ugly functions that are sometimes needed",
 
   "dependencies": {
-    "pareto-core-lib": "^0.18.1",
-    "pareto-core-raw": "^0.7.4",
-    "pareto-core-state": "^0.12.0"
+    "pareto-core-internals": "^0.11.1"
   },
   "files": [
     "dist"

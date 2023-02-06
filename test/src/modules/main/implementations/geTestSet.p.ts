@@ -4,7 +4,7 @@ import * as pl from "pareto-core-lib"
 
 import * as test from "lib-pareto-test"
 
-import * as api from "../../interface"
+import * as api from "../../../interface"
 
 
 import * as pub from "../../../../pub"
