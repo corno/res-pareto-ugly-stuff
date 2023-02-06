@@ -1,28 +1,19 @@
 {
   "author": "Corno",
+  "license": "ISC",
+  "description": "ugly functions that are sometimes needed",
+
   "dependencies": {
-    "api-pareto-common": "^0.2.0",
-    "pareto-core-internals": "^0.11.0"
+    "pareto-core-lib": "^0.18.1",
+    "pareto-core-raw": "^0.7.4",
+    "pareto-core-state": "^0.12.0"
   },
   "files": [
-    "dist",
-    "data"
+    "dist"
   ],
-  "keywords": [],
-  "main": "./dist/index.js",
-  "bugs": {
-    "url": "https://github.com/corno/pareto/issues"
-  },
-  "description": "",
-  "homepage": "https://github.com/corno/pareto#readme",
-  "license": "ISC",
-  "name": "res-pareto-ugly-stuff",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/corno/res-pareto-ugly-stuff.git"
+    "type": "git"
   },
-  "types": "dist/index.d.ts",
-  "version": "0.9.0",
-  "interface-fingerprint": "8f3758e19425b2231d2f998cf29ef6c2a7aff69c",
-  "content-fingerprint": "73f681318b3afd64b7b99aa40ce233d976e1bac2"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts"
 }
