@@ -11,14 +11,22 @@ export const $: mproject.T.Project = {
     'description': "ugly functions that are sometimes needed",
     'license': "ISC",
 
-    'pubdependencies': d({
+    'dependencies': d({
     }),
     'type': ['resource', {
         'definition': api,
+        'nativeDependencies': d({}),
         'devDependencies': d({}),
         'test': {
             'dependencies': d({
             }),
+            'glossary': {
+                'functions': d({}),
+                'imports': d({}),
+                'parameters': d({}),
+                'types': d({}),
+                'interfaces': d({}),
+            },
         }
     }],
 }
